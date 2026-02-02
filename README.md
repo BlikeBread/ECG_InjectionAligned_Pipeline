@@ -87,3 +87,52 @@ install.packages(c(
   "dplyr", "tidyr", "stringr", "readxl",
   "openxlsx", "tibble", "tcltk"
 ))
+
+3. Run the pipeline:
+
+source("ECG_Preprocessing_InjectionAligned_Splitting_and_Summary.R")
+
+4. When prompted, select:
+
+The folder containing raw ECG CSV files
+The Excel file with injection times
+The output folder
+
+5. The pipeline then runs automatically from start to finish.
+
+---
+
+## Cleaned summary outputs
+
+The final Excel files:
+Summary_Clean_Baseline.xlsx
+Summary_Clean_After_Injection.xlsx
+Summary_Clean_After_Injection_2min.xlsx
+
+These files are ready for statistical analysis and plotting.
+
+---
+
+## Typical use cases:
+
+- ECG drug response analysis
+- Baseline vs post-injection comparisons
+- Multi-animal aggregation of ECG features
+- Preparation of summary tables for figures
+- Reproducible preprocessing in collaborative projects
+
+---
+
+## Methods Description
+
+ECG feature data were aligned to the time of drug injection and split into baseline, post-injection, and post-injection (+2 min) windows using a custom R pipeline. Per-mouse averages and aligned feature matrices were generated for downstream statistical analysis.
+
+---
+
+##Notes
+
+The pipeline assumes consistent feature naming across CSV files
+Aligned-by-column datasets are intended for time-course analysis
+Cleaned summary tables are suitable for direct statistical testing
+
+
