@@ -75,8 +75,5 @@ ECG feature data were aligned to the time of drug injection and split into basel
 
 ## Notes
 
-The pipeline assumes consistent feature naming across CSV files
-Aligned-by-column datasets are intended for time-course analysis
-Cleaned summary tables are suitable for direct statistical testing
-
-
+This script was developed by **Michele Buono** and can be used freely for **research purposes**, provided appropriate citation of the author.
+The overall workflow, structure, and clarity of the pipeline were iteratively refined with assistance from **ChatGPT**, which was used as a tool to improve code organization, documentation, and usability.
