@@ -1,6 +1,9 @@
-# ECG Injection-Aligned Preprocessing Pipeline
+# ECG Injection-Aligned Preprocessing Pipeline (Script 01/03)
 
 This repository contains an R script for preprocessing ECG feature data aligned to drug injection time.  
+
+This script represents the first step (01/03) of a modular ECG analysis pipeline.
+
 The pipeline splits recordings into baseline and post-injection windows, generates aligned feature matrices, and produces cleaned summary tables ready for statistical analysis.
 
 ---
@@ -49,9 +52,10 @@ Only these two time columns are retained in the updated Excel output.
 ## Cleaned summary outputs
 
 The final Excel files:
-Summary_Clean_Baseline.xlsx
-Summary_Clean_After_Injection.xlsx
-Summary_Clean_After_Injection_2min.xlsx
+
+- Summary_Clean_Baseline.xlsx
+- Summary_Clean_After_Injection.xlsx
+- Summary_Clean_After_Injection_2min.xlsx
 
 These files are ready for statistical analysis and plotting.
 
@@ -64,6 +68,16 @@ These files are ready for statistical analysis and plotting.
 - Multi-animal aggregation of ECG features
 - Preparation of summary tables for figures
 - Reproducible preprocessing in collaborative projects
+
+---
+
+## Position in the ECG pipeline
+
+This script is Script 02 of a 3-step ECG analysis workflow:
+
+Script 01 (this repository) – Injection-aligned preprocessing and window generation
+Script 02 – QRS-based beat selection and First-N averaging
+Script 03 – Metadata integration, statistics, and visualization
 
 ---
 
