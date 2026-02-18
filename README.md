@@ -75,9 +75,9 @@ These files are ready for statistical analysis and plotting.
 
 This script is Script 02 of a 3-step ECG analysis workflow:
 
-Script 01 (this repository) – Injection-aligned preprocessing and window generation
-Script 02 – QRS-based beat selection and First-N averaging
-Script 03 – Metadata integration, statistics, and visualization
+1. Script 01 (this repository) – Injection-aligned preprocessing and window generation
+2. Script 02 – QRS-based beat selection and First-N averaging
+3. Script 03 – Metadata integration, statistics, and visualization
 
 ---
 
@@ -90,4 +90,8 @@ ECG feature data were aligned to the time of drug injection and split into basel
 ## Authorship
 
 This script was developed by **Michele Buono** and can be used freely for **research purposes**, provided appropriate citation of the author.
+
+**Buono, M. F. (2026). ECG Analysis Pipeline (Script 01/03) - Injection-aligned Preprocessing (v.1.0.0). Zenodo. 
+https://doi.org/10.5281/zenodo.18504118**
+
 The overall workflow, structure, and clarity of the pipeline were iteratively refined with assistance from **ChatGPT**, which was used as a tool to improve code organization, documentation, and usability.
